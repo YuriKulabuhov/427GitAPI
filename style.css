@@ -1,0 +1,56 @@
+body {
+  padding: 21px;
+  background-color: rgb(80, 130, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+input {
+  font-size: larger;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.selected {
+  width: 100%;
+  padding: 5px;
+  color: rgb(0, 250, 0);
+  list-style-type: none;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+}
+.selected:hover {
+  background-color: cornflowerblue;
+}
+.main {
+  width: 50%;
+  text-align: center;
+}
+.main__repositories-item {
+  border: 2px solid whitesmoke;
+  border-radius: 20%;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  pointer-events: none;
+}
+.main__repositories-item::after {
+  content: "\2718";
+  display: inline-block;
+  font-size: x-large;
+  color: whitesmoke;
+  background-color: red;
+  border: 3px solid red;
+  border-radius: 88%;
+  position: absolute;
+  top: 10%;
+  left: 94%;
+  cursor: pointer;
+  pointer-events: all;
+}
